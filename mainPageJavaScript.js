@@ -62,11 +62,11 @@ function setTypewriter(){
     if(soundCheck.checked){
         playTypewriter = "1"
         console.log("Setting cookie to checked");
-        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=/";
+        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC;";
     }else{
         playTypewriter = "0";
         console.log("Setting cookie to unchecked");
-        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=/";
+        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC;";
 
     }
     
@@ -78,7 +78,7 @@ function setDifficulty(){
 
 
     console.log("setDifficulty " + difficulty.value);
-     document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 28 Dec 2060 12:00:00 UTC; path=/";
+     document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 28 Dec 2060 12:00:00 UTC;";
 }
 var typewriter = document.getElementById('typewriter');
 
