@@ -76,8 +76,9 @@ var setDifficulty;
 function setDifficulty(){
     const difficulty = document.getElementById("difficulty");
 
+
     console.log("setDifficulty " + difficulty.value);
-    document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 28 Dec 2060 12:00:00 UTC; path=/";
+     document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 28 Dec 2060 12:00:00 UTC; path=/";
 }
 var typewriter = document.getElementById('typewriter');
 
