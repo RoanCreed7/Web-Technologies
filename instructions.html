@@ -7,19 +7,17 @@
 
         <link href="MainStylesheet.css" rel="stylesheet">
 
-        <title>About Page</title>
+        <title>Instructions Page</title>
     </head>
     <body>
-        
+
         <div>
             <audio id="audio" loop="true">
-                <source src="Music/Griphop.mp3" type="audio/mp3">
+                <source src="Music/Spy Glass.mp3" type="audio/mp3">
             </audio>
             <img alt="" src="Images/volume-mute-solid.svg" 
             id="audioMUMBtn" onclick="playMusic()" ></img>
         </div>
-
-
 
         <div class="menu">
             <div class="burger"></div>
@@ -39,21 +37,30 @@
         </div>
 
         <div id="title" class="title">
-            <u><b>About</b></u>
+            <u><b>Instructions</b></u>
         </div>
 
         <div class="container">
             <div class="content">
-                <b>Me: <br>
-                    Computing Science student at Edinburg Napier University. 
-                    Currently in second year.<br><br>
-                    This project: <br>
-                    This website is part of my semester two project for
-                    web technologies. First we have to design...
+                <b><div>Game Instructions:<br>
+                    As you move through the mission, you will be asked
+                    to choose between two options, one of which will provide
+                    a time bonus to complete the mini game. Then you must complete the game within
+                    the given amount of time or else you are caught and the mission is failed.
+                </div><br><br>
+                <div>Word Scramble:<br>
+                    You will be given a string of letters that 
+                    have been scrambled from a full word, your 
+                    job is to unscramble them in the time given.
+                    Each word is related to computing. As the difficulty
+                    level inceases so does the length of the word(Easy 3/4, Medium 5/6, Hard 7/8).
+                </div>
 
-                
+                    </div>         
+                    
                 </b>
             </div>
+
         </div>
         
         <script src="mainPageJavaScript.js"></script>
