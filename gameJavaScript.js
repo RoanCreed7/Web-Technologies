@@ -123,7 +123,7 @@ function selectNext(option){
 }
 
 var difficultyCookieExists;
-if (window.location.href.match('MainPage.html') != null){
+if (window.location.href.match('index.html') != null){
     difficultyCookieExists = getCookie('setDifficulty');
     if (difficultyCookieExists == ""){ 
         console.log('No cookie found');

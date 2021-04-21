@@ -23,7 +23,7 @@ var playTypewriter;
 var soundCookieExists;
 var difficultyCookieExists;
 
-if (window.location.href.match('SettingsPage.html') != null){
+if (window.location.href.match('settingsPage.html') != null){
     //Checks the cookie for the sounds setting
     soundCookieExists = getCookie('playTypewriter');
     difficultyCookieExists = getCookie('setDifficulty');
@@ -62,11 +62,11 @@ function setTypewriter(){
     if(soundCheck.checked){
         playTypewriter = "1"
         console.log("Setting cookie to checked");
-        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=A:\Uni Projects 2020\Web Developement\JavaScriptCoursework\REAL\Cookies";
+        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=/";
     }else{
         playTypewriter = "0";
         console.log("Setting cookie to unchecked");
-        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=A:\Uni Projects 2020\Web Developement\JavaScriptCoursework\REAL\Cookies";
+        document.cookie = "playTypewriter=" + playTypewriter + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=/";
 
     }
     
@@ -77,8 +77,7 @@ function setDifficulty(){
     const difficulty = document.getElementById("difficulty");
 
     console.log("setDifficulty " + difficulty.value);
-    document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 18 Dec 2060 12:00:00 UTC; path=A:\Uni Projects 2020\Web Developement\JavaScriptCoursework\REAL\Cookies";
-
+    document.cookie = "setDifficulty=" + difficulty.value + "; expires=Thu, 28 Dec 2060 12:00:00 UTC; path=/";
 }
 var typewriter = document.getElementById('typewriter');
 
